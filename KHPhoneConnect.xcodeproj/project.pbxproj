@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
+		BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220A196E44E2007A2AFA /* CoreGraphics.framework */; };
+		BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
+		BA442213196E44E2007A2AFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA442211196E44E2007A2AFA /* InfoPlist.strings */; };
+		BA442215196E44E2007A2AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442214196E44E2007A2AFA /* main.m */; };
+		BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442218196E44E2007A2AFA /* XCAppDelegate.m */; };
+		BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA44221A196E44E2007A2AFA /* Main.storyboard */; };
+		BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44221E196E44E2007A2AFA /* XCLoginViewController.m */; };
+		BA442221196E44E2007A2AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA442220196E44E2007A2AFA /* Images.xcassets */; };
+		BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442227196E44E2007A2AFA /* XCTest.framework */; };
+		BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
+		BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
+		BA442232196E44E2007A2AFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA442230196E44E2007A2AFA /* InfoPlist.strings */; };
+		BA442234196E44E2007A2AFA /* simpleVoIPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442233196E44E2007A2AFA /* simpleVoIPTests.m */; };
+		BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605C196E545200C23EE7 /* AudioToolbox.framework */; };
+		BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605E196E545900C23EE7 /* CFNetwork.framework */; };
+		BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6060196E546000C23EE7 /* AVFoundation.framework */; };
+		BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD0DED19726B4A005A6607 /* XCPjsua.m */; };
+		C417FCA41E56F731002CE278 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C417FCA31E56F731002CE278 /* LocalConnection.m */; };
+		C417FCA51E56F731002CE278 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C417FCA31E56F731002CE278 /* LocalConnection.m */; };
+		C45338E11E259EC0000EC133 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338C91E259EC0000EC133 /* libcrypto.a */; };
+		C45338E21E259EC0000EC133 /* libg7221codec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338CA1E259EC0000EC133 /* libg7221codec-arm-apple-darwin_ios.a */; };
+		C45338E31E259EC0000EC133 /* libgsmcodec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338CB1E259EC0000EC133 /* libgsmcodec-arm-apple-darwin_ios.a */; };
+		C45338E41E259EC0000EC133 /* libilbccodec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338CC1E259EC0000EC133 /* libilbccodec-arm-apple-darwin_ios.a */; };
+		C45338E51E259EC0000EC133 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338CD1E259EC0000EC133 /* libopus.a */; };
+		C45338E61E259EC0000EC133 /* libpj-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338CE1E259EC0000EC133 /* libpj-arm-apple-darwin_ios.a */; };
+		C45338E71E259EC0000EC133 /* libpjlib-util-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338CF1E259EC0000EC133 /* libpjlib-util-arm-apple-darwin_ios.a */; };
+		C45338E81E259EC0000EC133 /* libpjmedia-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D01E259EC0000EC133 /* libpjmedia-arm-apple-darwin_ios.a */; };
+		C45338E91E259EC0000EC133 /* libpjmedia-audiodev-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D11E259EC0000EC133 /* libpjmedia-audiodev-arm-apple-darwin_ios.a */; };
+		C45338EA1E259EC0000EC133 /* libpjmedia-codec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D21E259EC0000EC133 /* libpjmedia-codec-arm-apple-darwin_ios.a */; };
+		C45338EB1E259EC0000EC133 /* libpjmedia-videodev-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D31E259EC0000EC133 /* libpjmedia-videodev-arm-apple-darwin_ios.a */; };
+		C45338EC1E259EC0000EC133 /* libpjnath-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D41E259EC0000EC133 /* libpjnath-arm-apple-darwin_ios.a */; };
+		C45338ED1E259EC0000EC133 /* libpjsdp-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D51E259EC0000EC133 /* libpjsdp-arm-apple-darwin_ios.a */; };
+		C45338EE1E259EC0000EC133 /* libpjsip-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D61E259EC0000EC133 /* libpjsip-arm-apple-darwin_ios.a */; };
+		C45338EF1E259EC0000EC133 /* libpjsip-simple-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D71E259EC0000EC133 /* libpjsip-simple-arm-apple-darwin_ios.a */; };
+		C45338F01E259EC0000EC133 /* libpjsip-ua-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D81E259EC0000EC133 /* libpjsip-ua-arm-apple-darwin_ios.a */; };
+		C45338F11E259EC0000EC133 /* libpjsua-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338D91E259EC0000EC133 /* libpjsua-arm-apple-darwin_ios.a */; };
+		C45338F21E259EC0000EC133 /* libpjsua2-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338DA1E259EC0000EC133 /* libpjsua2-arm-apple-darwin_ios.a */; };
+		C45338F31E259EC0000EC133 /* libresample-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338DB1E259EC0000EC133 /* libresample-arm-apple-darwin_ios.a */; };
+		C45338F41E259EC0000EC133 /* libspeex-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338DC1E259EC0000EC133 /* libspeex-arm-apple-darwin_ios.a */; };
+		C45338F51E259EC0000EC133 /* libsrtp-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338DD1E259EC0000EC133 /* libsrtp-arm-apple-darwin_ios.a */; };
+		C45338F61E259EC0000EC133 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338DE1E259EC0000EC133 /* libssl.a */; };
+		C45338F71E259EC0000EC133 /* libwebrtc-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338DF1E259EC0000EC133 /* libwebrtc-arm-apple-darwin_ios.a */; };
+		C45338F81E259EC0000EC133 /* libyuv-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45338E01E259EC0000EC133 /* libyuv-arm-apple-darwin_ios.a */; };
+		C461014E1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */; };
+		C461014F1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */; };
+		C46A44271E198BCC00169565 /* KHPhonePrefUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A44261E198BCC00169565 /* KHPhonePrefUtil.swift */; };
+		C46A44281E198BCC00169565 /* KHPhonePrefUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A44261E198BCC00169565 /* KHPhonePrefUtil.swift */; };
+		C4AAEF721DC3A6C000ACF13B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF711DC3A6C000ACF13B /* Launch Screen.storyboard */; };
+		C4AAEF751DC3BA8300ACF13B /* KHSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF741DC3BA8300ACF13B /* KHSettingsViewController.m */; };
+		C4C41FF31DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */; };
+		C4C41FF41DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */; };
+		C4CEE3E31E216C45009D2439 /* KHPSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */; };
+		C4CEE3E41E216C45009D2439 /* KHPSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */; };
+		C4DD16D81E54EE2C0004ED78 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD16D71E54EE2C0004ED78 /* Reachability.swift */; };
+		C4DD16D91E54EE2C0004ED78 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD16D71E54EE2C0004ED78 /* Reachability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA44222B196E44E2007A2AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4421FD196E44E2007A2AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA442204196E44E2007A2AFA;
+			remoteInfo = simpleVoIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA442205196E44E2007A2AFA /* KHPhoneConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHPhoneConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA442208196E44E2007A2AFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA44220A196E44E2007A2AFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA44220C196E44E2007A2AFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA442210196E44E2007A2AFA /* KHPhoneConnect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KHPhoneConnect-Info.plist"; sourceTree = "<group>"; };
+		BA442212196E44E2007A2AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA442214196E44E2007A2AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA442216196E44E2007A2AFA /* KHPhoneConnect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KHPhoneConnect-Prefix.pch"; sourceTree = "<group>"; };
+		BA442217196E44E2007A2AFA /* XCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAppDelegate.h; sourceTree = "<group>"; };
+		BA442218196E44E2007A2AFA /* XCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAppDelegate.m; sourceTree = "<group>"; };
+		BA44221B196E44E2007A2AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA44221D196E44E2007A2AFA /* XCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCLoginViewController.h; sourceTree = "<group>"; };
+		BA44221E196E44E2007A2AFA /* XCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLoginViewController.m; sourceTree = "<group>"; };
+		BA442220196E44E2007A2AFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA442226196E44E2007A2AFA /* KHPhoneConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KHPhoneConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA442227196E44E2007A2AFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA44222F196E44E2007A2AFA /* KHPhoneConnectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KHPhoneConnectTests-Info.plist"; sourceTree = "<group>"; };
+		BA442231196E44E2007A2AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA442233196E44E2007A2AFA /* simpleVoIPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleVoIPTests.m; sourceTree = "<group>"; };
+		BA4A605C196E545200C23EE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA4A605E196E545900C23EE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BA4A6060196E546000C23EE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BACD0DED19726B4A005A6607 /* XCPjsua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPjsua.m; sourceTree = "<group>"; };
+		BACD0DEF19726B59005A6607 /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
+		C417FCA21E56F731002CE278 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
+		C417FCA31E56F731002CE278 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
+		C45338C71E259DC2000EC133 /* pjsip-include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "pjsip-include"; sourceTree = "<group>"; };
+		C45338C91E259EC0000EC133 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libWIthOpus/lib/libcrypto.a; sourceTree = "<group>"; };
+		C45338CA1E259EC0000EC133 /* libg7221codec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libg7221codec-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libg7221codec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338CB1E259EC0000EC133 /* libgsmcodec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsmcodec-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libgsmcodec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338CC1E259EC0000EC133 /* libilbccodec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libilbccodec-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libilbccodec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338CD1E259EC0000EC133 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = libWIthOpus/lib/libopus.a; sourceTree = "<group>"; };
+		C45338CE1E259EC0000EC133 /* libpj-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpj-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpj-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338CF1E259EC0000EC133 /* libpjlib-util-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjlib-util-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjlib-util-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D01E259EC0000EC133 /* libpjmedia-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjmedia-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D11E259EC0000EC133 /* libpjmedia-audiodev-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjmedia-audiodev-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D21E259EC0000EC133 /* libpjmedia-codec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-codec-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjmedia-codec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D31E259EC0000EC133 /* libpjmedia-videodev-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-videodev-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjmedia-videodev-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D41E259EC0000EC133 /* libpjnath-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjnath-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjnath-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D51E259EC0000EC133 /* libpjsdp-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsdp-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjsdp-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D61E259EC0000EC133 /* libpjsip-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjsip-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D71E259EC0000EC133 /* libpjsip-simple-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-simple-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjsip-simple-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D81E259EC0000EC133 /* libpjsip-ua-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-ua-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjsip-ua-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338D91E259EC0000EC133 /* libpjsua-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsua-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjsua-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338DA1E259EC0000EC133 /* libpjsua2-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsua2-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libpjsua2-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338DB1E259EC0000EC133 /* libresample-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libresample-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libresample-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338DC1E259EC0000EC133 /* libspeex-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libspeex-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libspeex-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338DD1E259EC0000EC133 /* libsrtp-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsrtp-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libsrtp-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338DE1E259EC0000EC133 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libWIthOpus/lib/libssl.a; sourceTree = "<group>"; };
+		C45338DF1E259EC0000EC133 /* libwebrtc-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwebrtc-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libwebrtc-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C45338E01E259EC0000EC133 /* libyuv-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libyuv-arm-apple-darwin_ios.a"; path = "libWIthOpus/lib/libyuv-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		C461014C1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPhoneRoundedUIView.h; sourceTree = "<group>"; };
+		C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPhoneRoundedUIView.m; sourceTree = "<group>"; };
+		C46A44211E198B9D00169565 /* KHPhone Connect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KHPhone Connect-Bridging-Header.h"; sourceTree = "<group>"; };
+		C46A44221E198B9D00169565 /* KHPhone ConnectTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KHPhone ConnectTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C46A44261E198BCC00169565 /* KHPhonePrefUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHPhonePrefUtil.swift; sourceTree = "<group>"; };
+		C4AAEF711DC3A6C000ACF13B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C4AAEF731DC3BA8300ACF13B /* KHSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSettingsViewController.h; sourceTree = "<group>"; };
+		C4AAEF741DC3BA8300ACF13B /* KHSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSettingsViewController.m; sourceTree = "<group>"; };
+		C4C41FF11DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPhoneQRScannerViewController.h; sourceTree = "<group>"; };
+		C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPhoneQRScannerViewController.m; sourceTree = "<group>"; };
+		C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHPSettingsViewController.swift; sourceTree = "<group>"; };
+		C4DD16D71E54EE2C0004ED78 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA442202196E44E2007A2AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45338EB1E259EC0000EC133 /* libpjmedia-videodev-arm-apple-darwin_ios.a in Frameworks */,
+				BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */,
+				C45338ED1E259EC0000EC133 /* libpjsdp-arm-apple-darwin_ios.a in Frameworks */,
+				C45338F01E259EC0000EC133 /* libpjsip-ua-arm-apple-darwin_ios.a in Frameworks */,
+				C45338F11E259EC0000EC133 /* libpjsua-arm-apple-darwin_ios.a in Frameworks */,
+				C45338F31E259EC0000EC133 /* libresample-arm-apple-darwin_ios.a in Frameworks */,
+				C45338E41E259EC0000EC133 /* libilbccodec-arm-apple-darwin_ios.a in Frameworks */,
+				C45338F21E259EC0000EC133 /* libpjsua2-arm-apple-darwin_ios.a in Frameworks */,
+				BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */,
+				C45338E51E259EC0000EC133 /* libopus.a in Frameworks */,
+				C45338F41E259EC0000EC133 /* libspeex-arm-apple-darwin_ios.a in Frameworks */,
+				C45338E61E259EC0000EC133 /* libpj-arm-apple-darwin_ios.a in Frameworks */,
+				C45338E81E259EC0000EC133 /* libpjmedia-arm-apple-darwin_ios.a in Frameworks */,
+				C45338EF1E259EC0000EC133 /* libpjsip-simple-arm-apple-darwin_ios.a in Frameworks */,
+				BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */,
+				C45338EC1E259EC0000EC133 /* libpjnath-arm-apple-darwin_ios.a in Frameworks */,
+				C45338F61E259EC0000EC133 /* libssl.a in Frameworks */,
+				C45338E21E259EC0000EC133 /* libg7221codec-arm-apple-darwin_ios.a in Frameworks */,
+				C45338E91E259EC0000EC133 /* libpjmedia-audiodev-arm-apple-darwin_ios.a in Frameworks */,
+				C45338F81E259EC0000EC133 /* libyuv-arm-apple-darwin_ios.a in Frameworks */,
+				BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */,
+				C45338F51E259EC0000EC133 /* libsrtp-arm-apple-darwin_ios.a in Frameworks */,
+				C45338EA1E259EC0000EC133 /* libpjmedia-codec-arm-apple-darwin_ios.a in Frameworks */,
+				BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */,
+				C45338F71E259EC0000EC133 /* libwebrtc-arm-apple-darwin_ios.a in Frameworks */,
+				BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */,
+				C45338E11E259EC0000EC133 /* libcrypto.a in Frameworks */,
+				C45338E31E259EC0000EC133 /* libgsmcodec-arm-apple-darwin_ios.a in Frameworks */,
+				C45338E71E259EC0000EC133 /* libpjlib-util-arm-apple-darwin_ios.a in Frameworks */,
+				C45338EE1E259EC0000EC133 /* libpjsip-arm-apple-darwin_ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA442223196E44E2007A2AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */,
+				BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */,
+				BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA4421FC196E44E2007A2AFA = {
+			isa = PBXGroup;
+			children = (
+				BA44220E196E44E2007A2AFA /* KHPhoneConnect */,
+				BA44222D196E44E2007A2AFA /* simpleVoIPTests */,
+				BA442207196E44E2007A2AFA /* Frameworks */,
+				BA442206196E44E2007A2AFA /* Products */,
+				C46A44211E198B9D00169565 /* KHPhone Connect-Bridging-Header.h */,
+				C46A44221E198B9D00169565 /* KHPhone ConnectTests-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		BA442206196E44E2007A2AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA442205196E44E2007A2AFA /* KHPhoneConnect.app */,
+				BA442226196E44E2007A2AFA /* KHPhoneConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA442207196E44E2007A2AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C45338C91E259EC0000EC133 /* libcrypto.a */,
+				C45338CA1E259EC0000EC133 /* libg7221codec-arm-apple-darwin_ios.a */,
+				C45338CB1E259EC0000EC133 /* libgsmcodec-arm-apple-darwin_ios.a */,
+				C45338CC1E259EC0000EC133 /* libilbccodec-arm-apple-darwin_ios.a */,
+				C45338CD1E259EC0000EC133 /* libopus.a */,
+				C45338CE1E259EC0000EC133 /* libpj-arm-apple-darwin_ios.a */,
+				C45338CF1E259EC0000EC133 /* libpjlib-util-arm-apple-darwin_ios.a */,
+				C45338D01E259EC0000EC133 /* libpjmedia-arm-apple-darwin_ios.a */,
+				C45338D11E259EC0000EC133 /* libpjmedia-audiodev-arm-apple-darwin_ios.a */,
+				C45338D21E259EC0000EC133 /* libpjmedia-codec-arm-apple-darwin_ios.a */,
+				C45338D31E259EC0000EC133 /* libpjmedia-videodev-arm-apple-darwin_ios.a */,
+				C45338D41E259EC0000EC133 /* libpjnath-arm-apple-darwin_ios.a */,
+				C45338D51E259EC0000EC133 /* libpjsdp-arm-apple-darwin_ios.a */,
+				C45338D61E259EC0000EC133 /* libpjsip-arm-apple-darwin_ios.a */,
+				C45338D71E259EC0000EC133 /* libpjsip-simple-arm-apple-darwin_ios.a */,
+				C45338D81E259EC0000EC133 /* libpjsip-ua-arm-apple-darwin_ios.a */,
+				C45338D91E259EC0000EC133 /* libpjsua-arm-apple-darwin_ios.a */,
+				C45338DA1E259EC0000EC133 /* libpjsua2-arm-apple-darwin_ios.a */,
+				C45338DB1E259EC0000EC133 /* libresample-arm-apple-darwin_ios.a */,
+				C45338DC1E259EC0000EC133 /* libspeex-arm-apple-darwin_ios.a */,
+				C45338DD1E259EC0000EC133 /* libsrtp-arm-apple-darwin_ios.a */,
+				C45338DE1E259EC0000EC133 /* libssl.a */,
+				C45338DF1E259EC0000EC133 /* libwebrtc-arm-apple-darwin_ios.a */,
+				C45338E01E259EC0000EC133 /* libyuv-arm-apple-darwin_ios.a */,
+				BA4A6060196E546000C23EE7 /* AVFoundation.framework */,
+				BA4A605E196E545900C23EE7 /* CFNetwork.framework */,
+				BA4A605C196E545200C23EE7 /* AudioToolbox.framework */,
+				BA442208196E44E2007A2AFA /* Foundation.framework */,
+				BA44220A196E44E2007A2AFA /* CoreGraphics.framework */,
+				BA44220C196E44E2007A2AFA /* UIKit.framework */,
+				BA442227196E44E2007A2AFA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA44220E196E44E2007A2AFA /* KHPhoneConnect */ = {
+			isa = PBXGroup;
+			children = (
+				BA442217196E44E2007A2AFA /* XCAppDelegate.h */,
+				BA442218196E44E2007A2AFA /* XCAppDelegate.m */,
+				BACD0DEF19726B59005A6607 /* XCPjsua.h */,
+				BACD0DED19726B4A005A6607 /* XCPjsua.m */,
+				BA44221D196E44E2007A2AFA /* XCLoginViewController.h */,
+				BA44221E196E44E2007A2AFA /* XCLoginViewController.m */,
+				C4AAEF731DC3BA8300ACF13B /* KHSettingsViewController.h */,
+				C4AAEF741DC3BA8300ACF13B /* KHSettingsViewController.m */,
+				C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */,
+				C4C41FF11DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.h */,
+				C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */,
+				BA44221A196E44E2007A2AFA /* Main.storyboard */,
+				C4AAEF711DC3A6C000ACF13B /* Launch Screen.storyboard */,
+				BA442220196E44E2007A2AFA /* Images.xcassets */,
+				BA44220F196E44E2007A2AFA /* Supporting Files */,
+				C461014C1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.h */,
+				C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */,
+				C46A44261E198BCC00169565 /* KHPhonePrefUtil.swift */,
+			);
+			name = KHPhoneConnect;
+			path = simpleVoIP;
+			sourceTree = "<group>";
+		};
+		BA44220F196E44E2007A2AFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C417FCA21E56F731002CE278 /* LocalConnection.h */,
+				C417FCA31E56F731002CE278 /* LocalConnection.m */,
+				C4DD16D71E54EE2C0004ED78 /* Reachability.swift */,
+				C45338C71E259DC2000EC133 /* pjsip-include */,
+				BA442210196E44E2007A2AFA /* KHPhoneConnect-Info.plist */,
+				BA442211196E44E2007A2AFA /* InfoPlist.strings */,
+				BA442214196E44E2007A2AFA /* main.m */,
+				BA442216196E44E2007A2AFA /* KHPhoneConnect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA44222D196E44E2007A2AFA /* simpleVoIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA442233196E44E2007A2AFA /* simpleVoIPTests.m */,
+				BA44222E196E44E2007A2AFA /* Supporting Files */,
+			);
+			path = simpleVoIPTests;
+			sourceTree = "<group>";
+		};
+		BA44222E196E44E2007A2AFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA44222F196E44E2007A2AFA /* KHPhoneConnectTests-Info.plist */,
+				BA442230196E44E2007A2AFA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA442204196E44E2007A2AFA /* KHPhoneConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA442237196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "KHPhoneConnect" */;
+			buildPhases = (
+				BA442201196E44E2007A2AFA /* Sources */,
+				BA442202196E44E2007A2AFA /* Frameworks */,
+				BA442203196E44E2007A2AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KHPhoneConnect;
+			productName = simpleVoIP;
+			productReference = BA442205196E44E2007A2AFA /* KHPhoneConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA442225196E44E2007A2AFA /* KHPhoneConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA44223A196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "KHPhoneConnectTests" */;
+			buildPhases = (
+				BA442222196E44E2007A2AFA /* Sources */,
+				BA442223196E44E2007A2AFA /* Frameworks */,
+				BA442224196E44E2007A2AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA44222C196E44E2007A2AFA /* PBXTargetDependency */,
+			);
+			name = KHPhoneConnectTests;
+			productName = simpleVoIPTests;
+			productReference = BA442226196E44E2007A2AFA /* KHPhoneConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA4421FD196E44E2007A2AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KHP;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = KHPhone;
+				TargetAttributes = {
+					BA442204196E44E2007A2AFA = {
+						DevelopmentTeam = FR97A6NL2M;
+						DevelopmentTeamName = "Armand van der Zwan (Personal Team)";
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BA442225196E44E2007A2AFA = {
+						DevelopmentTeam = FR97A6NL2M;
+						LastSwiftMigration = 0820;
+						TestTargetID = BA442204196E44E2007A2AFA;
+					};
+				};
+			};
+			buildConfigurationList = BA442200196E44E2007A2AFA /* Build configuration list for PBXProject "KHPhoneConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA4421FC196E44E2007A2AFA;
+			productRefGroup = BA442206196E44E2007A2AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA442204196E44E2007A2AFA /* KHPhoneConnect */,
+				BA442225196E44E2007A2AFA /* KHPhoneConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA442203196E44E2007A2AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442221196E44E2007A2AFA /* Images.xcassets in Resources */,
+				BA442213196E44E2007A2AFA /* InfoPlist.strings in Resources */,
+				C4AAEF721DC3A6C000ACF13B /* Launch Screen.storyboard in Resources */,
+				BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA442224196E44E2007A2AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA442232196E44E2007A2AFA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA442201196E44E2007A2AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46A44271E198BCC00169565 /* KHPhonePrefUtil.swift in Sources */,
+				C461014E1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m in Sources */,
+				BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */,
+				BA442215196E44E2007A2AFA /* main.m in Sources */,
+				BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */,
+				C4C41FF31DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */,
+				C4AAEF751DC3BA8300ACF13B /* KHSettingsViewController.m in Sources */,
+				BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */,
+				C4DD16D81E54EE2C0004ED78 /* Reachability.swift in Sources */,
+				C417FCA41E56F731002CE278 /* LocalConnection.m in Sources */,
+				C4CEE3E31E216C45009D2439 /* KHPSettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA442222196E44E2007A2AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C461014F1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m in Sources */,
+				BA442234196E44E2007A2AFA /* simpleVoIPTests.m in Sources */,
+				C4DD16D91E54EE2C0004ED78 /* Reachability.swift in Sources */,
+				C417FCA51E56F731002CE278 /* LocalConnection.m in Sources */,
+				C46A44281E198BCC00169565 /* KHPhonePrefUtil.swift in Sources */,
+				C4C41FF41DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */,
+				C4CEE3E41E216C45009D2439 /* KHPSettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA44222C196E44E2007A2AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA442204196E44E2007A2AFA /* KHPhoneConnect */;
+			targetProxy = BA44222B196E44E2007A2AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA442211196E44E2007A2AFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA442212196E44E2007A2AFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA44221A196E44E2007A2AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA44221B196E44E2007A2AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA442230196E44E2007A2AFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA442231196E44E2007A2AFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA442235196E44E3007A2AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA442236196E44E3007A2AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA442238196E44E3007A2AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FR97A6NL2M;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/KHPhoneConnect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PJ_AUTOCONF,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libWIthOpus/pjsip-include\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "simpleVoIP/KHPhoneConnect-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_MAP_FILE_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libWIthOpus/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gappless.khphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA442239196E44E3007A2AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FR97A6NL2M;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/KHPhoneConnect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PJ_AUTOCONF,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libWIthOpus/pjsip-include\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "simpleVoIP/KHPhoneConnect-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_MAP_FILE_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libWIthOpus/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gappless.khphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BA44223B196E44E3007A2AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FR97A6NL2M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/KHPhoneConnect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(CONFIGURATION_TEMP_DIR)/$(PROJECT_NAME).build/DerivedSources";
+				INFOPLIST_FILE = "simpleVoIPTests/KHPhoneConnectTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xianwenchen.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone ConnectTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHPhoneConnect.app/KHPhoneConnect";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BA44223C196E44E3007A2AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = FR97A6NL2M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simpleVoIP/KHPhoneConnect-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(CONFIGURATION_TEMP_DIR)/$(PROJECT_NAME).build/DerivedSources";
+				INFOPLIST_FILE = "simpleVoIPTests/KHPhoneConnectTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xianwenchen.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone ConnectTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHPhoneConnect.app/KHPhoneConnect";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA442200196E44E2007A2AFA /* Build configuration list for PBXProject "KHPhoneConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA442235196E44E3007A2AFA /* Debug */,
+				BA442236196E44E3007A2AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA442237196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "KHPhoneConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA442238196E44E3007A2AFA /* Debug */,
+				BA442239196E44E3007A2AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA44223A196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "KHPhoneConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA44223B196E44E3007A2AFA /* Debug */,
+				BA44223C196E44E3007A2AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA4421FD196E44E2007A2AFA /* Project object */;
+}
