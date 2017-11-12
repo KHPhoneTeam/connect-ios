@@ -1,0 +1,15 @@
+PODS:
+  - OpenSSL-Universal (1.0.2.11)
+  - pjsip (2.6):
+    - OpenSSL-Universal
+
+DEPENDENCIES:
+  - pjsip
+
+SPEC CHECKSUMS:
+  OpenSSL-Universal: bcea8d73aec478029029164f9f0695b57cb94309
+  pjsip: 1fad137648dcbc6e1b2a6d153c7cc4c63d04e21d
+
+PODFILE CHECKSUM: 04391672362ebea093ff929236f153a86380fa5d
+
+COCOAPODS: 1.2.0
