@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KHPSettingsViewController: UIViewController, UITextFieldDelegate {
+@objc class KHPSettingsViewController: UIViewController, UITextFieldDelegate {
     let reachability = Reachability()!
     //let pjsua = XCPjsua()
     
@@ -16,12 +16,12 @@ class KHPSettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var sipAdressTextField: UITextField!
     @IBOutlet weak var portNumberTextField: UITextField!
     @IBOutlet weak var userPhoneNumberTextField: UITextField!
-    var focusOnUserPhoneNeeded : Bool = false
+    @objc var focusOnUserPhoneNeeded : Bool = false
     var cameFromQR : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        sipAdressTextField.text = "boe"
         if reachability.isReachableViaWiFi {
             print("Reachable via WiFi")
         } else {
@@ -73,7 +73,7 @@ class KHPSettingsViewController: UIViewController, UITextFieldDelegate {
     @IBAction func doneButtonPressed(sender: UIButton){
         view.endEditing(true)
     }
-    func donePressedOnKeyboard(){
+    @objc func donePressedOnKeyboard(){
         view.endEditing(true)
     }
 
@@ -88,31 +88,32 @@ class KHPSettingsViewController: UIViewController, UITextFieldDelegate {
     func updateTextFields(){
         let sipPort = KHPhonePrefUtil.returnSipPort()
         if (sipPort != 0) {
-            self.portNumberTextField.text = String(sipPort);
+            portNumberTextField.text = String(sipPort);
         } else {
-            self.portNumberTextField.text = "5011"; // default
+            portNumberTextField.text = "5011"; // default
         }
 
         if let sipAddress = KHPhonePrefUtil.returnSipURL() {
-            self.sipAdressTextField.text = sipAddress;
+            sipAdressTextField.text = sipAddress;
         } else {
-            self.sipAdressTextField.text = ""; // default
+            sipAdressTextField.text = ""; // default
         }
         
         if let userPhoneNumber = KHPhonePrefUtil.returnUserPhoneNumber() {
-            self.userPhoneNumberTextField.text = userPhoneNumber;
+            userPhoneNumberTextField.text = userPhoneNumber;
         } else {
-            self.sipAdressTextField.text = ""; // default
+            userPhoneNumberTextField.text = ""; // default
         }
     }
     
     func updatePreferences(){
-        let sipPort = Int(self.portNumberTextField.text!)
-        let sipAddress = self.sipAdressTextField.text!
-        let userPhoneNumber = self.userPhoneNumberTextField.text!
+        let sipPort = Int(portNumberTextField.text!)
+        let sipAddress = sipAdressTextField.text!
+        let userPhoneNumber = userPhoneNumberTextField.text!
         KHPhonePrefUtil.save(sipPort: sipPort!)
         KHPhonePrefUtil.save(sipAddress: sipAddress)
         KHPhonePrefUtil.save(userPhoneNumber: userPhoneNumber)
+        // register account!
         
     }
     

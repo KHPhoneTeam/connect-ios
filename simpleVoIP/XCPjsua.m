@@ -17,12 +17,14 @@
  */
 
 #import "XCPjsua.h"
+#import "pjsua.h"
+#import "KHPhonePreferencesUtil.h"
 
-#import <pjsua-lib/pjsua.h>
 @import AVFoundation;
 
 #define THIS_FILE "XCPjsua.c"
 static pjsua_acc_id _acc_id;
+static pjsua_transport_id local_transport_id;
 //static pjsua_call_id _call_id;
 
 const size_t MAX_SIP_ID_LENGTH = 50;
@@ -43,6 +45,7 @@ NSString * const KHPhoneCallNotification = @"KHPhoneCallNotification";
 @implementation XCPjsua
 {
     pjsua_acc_id _acc_id;
+    pjsua_transport_id local_transport_id;
     pjsua_call_id _call_id;
     RegisterCallBack _registerCallBack;
 }
@@ -80,7 +83,7 @@ int initPjsip()
     if (status != PJ_SUCCESS) error_exit("Error in pjsua_create()", status);
     
     // Init pjsua
-    {
+    
         // Init the config structure
         pjsua_config cfg;
         pjsua_config_default (&cfg);
@@ -105,29 +108,29 @@ int initPjsip()
         {
             fprintf(stderr, "Warning: Failed to set opus/48000 codec at highest priority\n" );
         }
-    }
+    
     
     // Add UDP transport.
-    {
+    
         // Init transport config structure
-        pjsua_transport_config cfg;
-        pjsua_transport_config_default(&cfg);
-        cfg.port = 5011;
+        pjsua_transport_config udpcfg;
+        pjsua_transport_config_default(&udpcfg);
+        udpcfg.port = 5011;
         
         // Add TCP transport.
-        status = pjsua_transport_create(PJSIP_TRANSPORT_UDP, &cfg, NULL);
+        status = pjsua_transport_create(PJSIP_TRANSPORT_UDP, &udpcfg, &local_transport_id);
         if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
-    }
+    
     
     // Add TCP transport.
     {
         // Init transport config structure
-        pjsua_transport_config cfg;
-        pjsua_transport_config_default(&cfg);
-        cfg.port = 5011;
+        pjsua_transport_config tcpcfg;
+        pjsua_transport_config_default(&tcpcfg);
+        tcpcfg.port = 5011;
         
         // Add TCP transport.
-        status = pjsua_transport_create(PJSIP_TRANSPORT_TCP, &cfg, NULL);
+        status = pjsua_transport_create(PJSIP_TRANSPORT_TCP, &tcpcfg, NULL);
         if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
     }
     
@@ -135,6 +138,9 @@ int initPjsip()
     status = pjsua_start();
     if (status != PJ_SUCCESS) error_exit("Error starting pjsua", status);
     
+    //status = pjsua_acc_add_local(local_transport_id, true, &_acc_id);
+    if (status != PJ_SUCCESS) error_exit("Error adding local account", status);
+    //int result = registerAccount("0653703730", "khphone");
     pjsua_codec_info c[32];
     
     unsigned k, count = PJ_ARRAY_SIZE(c);
@@ -158,7 +164,6 @@ int registerAccount(char *sipUser, char* sipDomain){
         //unregister it first
         pjsua_acc_del(_acc_id);
     }
-    
     // Register the account on local sip server
     pj_status_t status;
     pjsua_acc_config cfg;
@@ -187,19 +192,23 @@ int registerAccount(char *sipUser, char* sipDomain){
 - (void)sendTone{
     pj_status_t status;
     pj_str_t tone = pj_str("#");
-    status =  pjsua_call_dial_dtmf	(_call_id ,&tone)	;
+    status =  pjsua_call_dial_dtmf(_call_id ,&tone)	;
     
 }
 
 - (void)sendAsteriskTone{
     pj_status_t status;
     pj_str_t tone = pj_str("*");
-    status =  pjsua_call_dial_dtmf	(_call_id ,&tone)	;
+    status =  pjsua_call_dial_dtmf(_call_id ,&tone)	;
     
 }
 
 - (BOOL)makeCallTo:(NSString *)destUri
 {
+    char *sipUser = (char*) [[KHPhonePrefUtil returnUserPhoneNumber] UTF8String];
+    //char *sipDomain = (char*)[[KHPhonePrefUtil returnCongregationName] UTF8String];
+    int registerStatus = registerAccount(sipUser, "khphone.nl");
+    
     char *cDestUri = (char*)[destUri UTF8String];
     pj_status_t status;
     pj_str_t uri = pj_str(cDestUri);

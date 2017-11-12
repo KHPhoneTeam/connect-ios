@@ -1,4 +1,4 @@
-simpleVoIP
+KHPhone
 ==========
 
-A simple iOS VoIP app for the tutorial at www.xianwenchen.com
+KHPhone is based on simple iOS VoIP app from the tutorial at www.xianwenchen.com

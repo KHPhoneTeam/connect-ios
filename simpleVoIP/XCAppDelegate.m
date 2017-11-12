@@ -19,7 +19,6 @@
 #import "XCAppDelegate.h"
 #import "XCPjsua.h"
 #import "XCLoginViewController.h"
-#import "KHSettingsViewController.h"
 
 @interface XCAppDelegate ()
 @property (nonatomic, strong) NSURL *launchedURL;
@@ -130,17 +129,6 @@
         
     }
 
-    /*
-    if ([tbc isKindOfClass:[KHPhoneTabBarController class]]) {
-        KHPhoneTabBarController *khphoneTabBarController = (KHPhoneTabBarController*)tbc;
-        
-        KHSettingsViewController *settingsVC = khphoneTabBarController.viewControllers[1]; // We know it is!
-        
-            } else {
-        // something is seriously wrong with the TabBar!
-        
-    }
-     */
     return YES;
 }
 

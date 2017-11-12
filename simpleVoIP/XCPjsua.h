@@ -47,7 +47,7 @@ typedef void (^RegisterCallBack)(BOOL success);
  * @return When successful, returns 0.
  */
 int registerAccount(char *sipUser, char* sipDomain);
-
+//-(BOOL) registerAccountWithUser:(NSString*)sipUser domain:(NSString *)sipDomain;
 /**
  * Initialize pjsua.
  *

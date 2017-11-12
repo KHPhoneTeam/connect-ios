@@ -16,45 +16,41 @@ let congregationNameKey = "congregationName"
 @objc class KHPhonePrefUtil : NSObject {
     
     // writing
-    class func save(sipPort:Int = 5011){
-        let defaults = UserDefaults.standard
-        defaults.set(sipPort, forKey: sipPortKey)
+    @objc class func save(sipPort:Int = 5011){
+        UserDefaults.standard.set(sipPort, forKey: sipPortKey)
     }
-    class func save(sipAddress:String){
-        let defaults = UserDefaults.standard
-        defaults.set(sipAddress, forKey: sipAddressKey)
+    @objc class func save(sipAddress:String){
+        UserDefaults.standard.set(sipAddress, forKey: sipAddressKey)
     }
-    class func save(userPhoneNumber:String){
-        let defaults = UserDefaults.standard
-        defaults.set(userPhoneNumber, forKey: userPhoneNumberKey)
+    @objc class func save(userPhoneNumber:String){
+        UserDefaults.standard.set(userPhoneNumber, forKey: userPhoneNumberKey)
     }
-    class func save(congregationName:String = "Onbekende gemeente"){
-        let defaults = UserDefaults.standard
-        defaults.set(congregationName, forKey: congregationNameKey)
+    @objc class func save(congregationName:String = "Onbekende gemeente"){
+        UserDefaults.standard.set(congregationName, forKey: congregationNameKey)
     }
     
     // reading
-    class func returnSipURL() -> String?{
+    @objc class func returnSipURL() -> String?{
         let defaults = UserDefaults.standard
         let name = defaults.string(forKey: sipAddressKey)
         return name
     }
-    class func returnSipPort() -> Int{
+    @objc class func returnSipPort() -> Int{
         let defaults = UserDefaults.standard
         return defaults.integer(forKey: sipPortKey)
     }
-    class func returnUserPhoneNumber() -> String?{
+    @objc class func returnUserPhoneNumber() -> String?{
         let defaults = UserDefaults.standard
         let name = defaults.string(forKey: userPhoneNumberKey)
         return name
     }
-    class func returnCongregationName() -> String?{
+    @objc class func returnCongregationName() -> String?{
         let defaults = UserDefaults.standard
         let name = defaults.string(forKey: congregationNameKey)
         return name
     }
     
-    class func isPreferencesSet() -> Bool {
+    @objc class func isPreferencesSet() -> Bool {
         
         if self.returnSipURL() == nil{
             return false

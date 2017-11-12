@@ -18,7 +18,6 @@
 
 #import "XCLoginViewController.h"
 #import "XCPjsua.h"
-#import "KHSettingsViewController.h"
 #import "LocalConnection.h"
 
 @interface XCLoginViewController ()
@@ -64,9 +63,11 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
      if ([KHPhonePrefUtil isPreferencesSet]) {
          //self.callButton.enabled = NO;
          self.congregationNameLabel.text = [KHPhonePrefUtil returnCongregationName];
+         //[[XCPjsua sharedXCPjsua] registerAccountWithUser:[KHPhonePrefUtil returnUserPhoneNumber] domain:[KHPhonePrefUtil returnSipURL]];
      } else {
         // self.callButton.enabled = YES;
          
@@ -295,8 +296,8 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"presentSettingsSegue"]) {
-        if ([segue.destinationViewController isKindOfClass:[KHSettingsViewController class]]) {
-            KHSettingsViewController *settingsVC = (KHSettingsViewController *) segue.destinationViewController;
+        if ([segue.destinationViewController isKindOfClass:[KHPSettingsViewController class]]) {
+            KHPSettingsViewController *settingsVC = (KHPSettingsViewController *) segue.destinationViewController;
             settingsVC.focusOnUserPhoneNeeded = _focusOnUserPhoneNumberNeeded;
         }
     }
