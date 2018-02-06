@@ -21,7 +21,7 @@ import UIKit
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sipAdressTextField.text = "boe"
+        sipAdressTextField.text = ""
         if reachability.isReachableViaWiFi {
             print("Reachable via WiFi")
         } else {
@@ -66,13 +66,14 @@ import UIKit
     }
     
     @IBAction func closeButtonPressed(sender: UIButton){
-        self.dismiss(animated: true) { 
-            
+        self.dismiss(animated: true) {
         }
     }
+    
     @IBAction func doneButtonPressed(sender: UIButton){
         view.endEditing(true)
     }
+    
     @objc func donePressedOnKeyboard(){
         view.endEditing(true)
     }

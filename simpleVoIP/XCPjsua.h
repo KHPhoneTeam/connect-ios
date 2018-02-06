@@ -53,7 +53,7 @@ int registerAccount(char *sipUser, char* sipDomain);
  *
  * @return When successful, returns 0.
  */
-int initPjsip();
+int initPjsip(void);
 
 /**
  * Initialize and start pjsua.

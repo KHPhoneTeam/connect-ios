@@ -628,7 +628,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3e56eda8-dd2b-44ee-9898-c0e87b17017b";
 				PROVISIONING_PROFILE_SPECIFIER = "KHPhone-test";
-				SDKROOT = iphoneos11.1;
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -670,7 +670,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0c453756-2ce7-4e73-b2ab-2e000b594edc";
 				PROVISIONING_PROFILE_SPECIFIER = "KHPhone_27-10-2017";
-				SDKROOT = iphoneos11.1;
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

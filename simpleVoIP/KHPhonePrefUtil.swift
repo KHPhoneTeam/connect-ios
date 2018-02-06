@@ -19,12 +19,15 @@ let congregationNameKey = "congregationName"
     @objc class func save(sipPort:Int = 5011){
         UserDefaults.standard.set(sipPort, forKey: sipPortKey)
     }
+    
     @objc class func save(sipAddress:String){
         UserDefaults.standard.set(sipAddress, forKey: sipAddressKey)
     }
+    
     @objc class func save(userPhoneNumber:String){
         UserDefaults.standard.set(userPhoneNumber, forKey: userPhoneNumberKey)
     }
+    
     @objc class func save(congregationName:String = "Onbekende gemeente"){
         UserDefaults.standard.set(congregationName, forKey: congregationNameKey)
     }
@@ -35,15 +38,18 @@ let congregationNameKey = "congregationName"
         let name = defaults.string(forKey: sipAddressKey)
         return name
     }
+    
     @objc class func returnSipPort() -> Int{
         let defaults = UserDefaults.standard
         return defaults.integer(forKey: sipPortKey)
     }
+    
     @objc class func returnUserPhoneNumber() -> String?{
         let defaults = UserDefaults.standard
         let name = defaults.string(forKey: userPhoneNumberKey)
         return name
     }
+    
     @objc class func returnCongregationName() -> String?{
         let defaults = UserDefaults.standard
         let name = defaults.string(forKey: congregationNameKey)
