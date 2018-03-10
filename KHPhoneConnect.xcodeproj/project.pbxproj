@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C21C2A5C53E8D7495308A55 /* Pods_KHPhoneConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC48C8161B76BA07C6CF926B /* Pods_KHPhoneConnectTests.framework */; };
 		BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
 		BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220A196E44E2007A2AFA /* CoreGraphics.framework */; };
 		BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
@@ -17,7 +16,6 @@
 		BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA44221A196E44E2007A2AFA /* Main.storyboard */; };
 		BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44221E196E44E2007A2AFA /* XCLoginViewController.m */; };
 		BA442221196E44E2007A2AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA442220196E44E2007A2AFA /* Images.xcassets */; };
-		BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442227196E44E2007A2AFA /* XCTest.framework */; };
 		BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
 		BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
 		BA442232196E44E2007A2AFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA442230196E44E2007A2AFA /* InfoPlist.strings */; };
@@ -52,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2710BB2BB7AE915603735773 /* Pods_KHPhoneConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHPhoneConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		453FEF9679F7F9AC96A091CE /* Pods-KHPhoneConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnectTests/Pods-KHPhoneConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F64D5CB3D363C9ED21C6C01 /* Pods-KHPhoneConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnect/Pods-KHPhoneConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		BA442205196E44E2007A2AFA /* KHPhoneConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHPhoneConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +67,6 @@
 		BA44221E196E44E2007A2AFA /* XCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLoginViewController.m; sourceTree = "<group>"; };
 		BA442220196E44E2007A2AFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BA442226196E44E2007A2AFA /* KHPhoneConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KHPhoneConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA442227196E44E2007A2AFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BA44222F196E44E2007A2AFA /* KHPhoneConnectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KHPhoneConnectTests-Info.plist"; sourceTree = "<group>"; };
 		BA442231196E44E2007A2AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA442233196E44E2007A2AFA /* simpleVoIPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleVoIPTests.m; sourceTree = "<group>"; };
@@ -79,7 +75,6 @@
 		BA4A6060196E546000C23EE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BACD0DED19726B4A005A6607 /* XCPjsua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPjsua.m; sourceTree = "<group>"; };
 		BACD0DEF19726B59005A6607 /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
-		BC48C8161B76BA07C6CF926B /* Pods_KHPhoneConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHPhoneConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16B80CB30EB82B512B1C4EC /* Pods-KHPhoneConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnectTests/Pods-KHPhoneConnectTests.release.xcconfig"; sourceTree = "<group>"; };
 		C417FCA21E56F731002CE278 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
 		C417FCA31E56F731002CE278 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
@@ -114,10 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */,
 				BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */,
 				BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */,
-				6C21C2A5C53E8D7495308A55 /* Pods_KHPhoneConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +148,6 @@
 				BA442208196E44E2007A2AFA /* Foundation.framework */,
 				BA44220A196E44E2007A2AFA /* CoreGraphics.framework */,
 				BA44220C196E44E2007A2AFA /* UIKit.framework */,
-				BA442227196E44E2007A2AFA /* XCTest.framework */,
-				2710BB2BB7AE915603735773 /* Pods_KHPhoneConnect.framework */,
-				BC48C8161B76BA07C6CF926B /* Pods_KHPhoneConnectTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -363,13 +353,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KHPhoneConnectTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7653FA8E8687A0FFA8698883 /* [CP] Embed Pods Frameworks */ = {
@@ -393,13 +386,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KHPhoneConnect-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7FFA41E9055841E2E57DFEDD /* [CP] Copy Pods Resources */ = {
