@@ -87,7 +87,7 @@ int initPjsip()
         // Init the config structure
         pjsua_config cfg;
         pjsua_config_default (&cfg);
-        
+    
         cfg.cb.on_incoming_call = &on_incoming_call;
         cfg.cb.on_call_media_state = &on_call_media_state;
         cfg.cb.on_call_state = &on_call_state;
@@ -116,7 +116,7 @@ int initPjsip()
         pjsua_transport_config udpcfg;
         pjsua_transport_config_default(&udpcfg);
         udpcfg.port = 5011;
-        
+    
         // Add TCP transport.
         status = pjsua_transport_create(PJSIP_TRANSPORT_UDP, &udpcfg, &local_transport_id);
         if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
@@ -128,6 +128,7 @@ int initPjsip()
         pjsua_transport_config tcpcfg;
         pjsua_transport_config_default(&tcpcfg);
         tcpcfg.port = 5011;
+        
         
         // Add TCP transport.
         status = pjsua_transport_create(PJSIP_TRANSPORT_TCP, &tcpcfg, NULL);
@@ -168,6 +169,7 @@ int registerAccount(char *sipUser, char* sipDomain){
     pj_status_t status;
     pjsua_acc_config cfg;
     pjsua_acc_config_default(&cfg);
+    cfg.ipv6_media_use = PJSUA_IPV6_DISABLED;
     
     char sipId[MAX_SIP_ID_LENGTH];
     sprintf(sipId, "sip:%s@%s", sipUser, sipDomain);
