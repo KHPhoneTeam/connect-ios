@@ -249,10 +249,10 @@
 - (void)updateAnswerState:(BOOL)state{
     dispatch_async(dispatch_get_main_queue(), ^{
         if (state) {
-            _answering = YES;
+            self.answering = YES;
             self.answerButton.tintColor = [UIColor redColor];
         } else {
-            _answering = NO;
+            self.answering = NO;
             self.answerButton.tintColor = [UIColor greenColor];
         }
     });
@@ -262,10 +262,10 @@
 - (void) updateCallState:(BOOL)state{
     dispatch_async(dispatch_get_main_queue(), ^{
         if (state) {
-            _calling = YES;
+            self.calling = YES;
             [self.callButton setImage:[UIImage imageNamed:@"cross"] forState:UIControlStateNormal];
         } else {
-            _calling = NO;
+            self.calling = NO;
             [self.callButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
         }
     });

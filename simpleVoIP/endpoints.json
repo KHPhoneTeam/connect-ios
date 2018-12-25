@@ -1,0 +1,46 @@
+{
+  "endpoints": [
+    {
+      "id": 0, 
+      "name": "Amsterdam Tuindorp-Oostzaan", 
+      "port": 5060, 
+      "sip": "sip:31207165913@sip1.budgetphone.nl"
+    }, 
+    {
+      "id": 1, 
+      "name": "Amsterdam Osdorp", 
+      "port": 5011, 
+      "sip": "sip:khphone@62.251.8.39"
+    }, 
+    {
+      "id": 2, 
+      "name": "Noordwolde", 
+      "port": 5060, 
+      "sip": "sip:31561712056@sip1.budgetphone.nl"
+    }, 
+    {
+      "id": 3, 
+      "name": "Beverwijk", 
+      "port": 5060, 
+      "sip": "sip:31251714015@sip1.budgetphone.nl"
+    }, 
+    {
+      "id": 4, 
+      "name": "Amsterdam Fagelstraat", 
+      "port": 5060, 
+      "sip": "sip:31207173454@sip1.budgetphone.nl"
+    }, 
+    {
+      "id": 5, 
+      "name": "Purmerend 1", 
+      "port": 5060, 
+      "sip": "sip:31299714007@sip1.budgetphone.nl"
+    }, 
+    {
+      "id": 6, 
+      "name": "Purmerend 2", 
+      "port": 5060, 
+      "sip": "sip:31299714047@sip1.budgetphone.nl"
+    }
+  ]
+}

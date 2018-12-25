@@ -27,6 +27,7 @@
 		BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD0DED19726B4A005A6607 /* XCPjsua.m */; };
 		C417FCA41E56F731002CE278 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C417FCA31E56F731002CE278 /* LocalConnection.m */; };
 		C417FCA51E56F731002CE278 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C417FCA31E56F731002CE278 /* LocalConnection.m */; };
+		C446DCA021D2D4CD0060F23E /* PickerViewFeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446DC9F21D2D4CD0060F23E /* PickerViewFeeder.swift */; };
 		C461014E1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */; };
 		C461014F1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */; };
 		C46A44271E198BCC00169565 /* KHPhonePrefUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A44261E198BCC00169565 /* KHPhonePrefUtil.swift */; };
@@ -35,9 +36,10 @@
 		C4C41FF31DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */; };
 		C4C41FF41DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */; };
 		C4CEE3E31E216C45009D2439 /* KHPSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */; };
-		C4CEE3E41E216C45009D2439 /* KHPSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */; };
 		C4DD16D81E54EE2C0004ED78 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD16D71E54EE2C0004ED78 /* Reachability.swift */; };
 		C4DD16D91E54EE2C0004ED78 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD16D71E54EE2C0004ED78 /* Reachability.swift */; };
+		C4EF132C21D273A500DBC8E2 /* endpoints.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EF132B21D273A500DBC8E2 /* endpoints.json */; };
+		C4EF132E21D2A40100DBC8E2 /* ToolbarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF132D21D2A40100DBC8E2 /* ToolbarPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,7 @@
 		C16B80CB30EB82B512B1C4EC /* Pods-KHPhoneConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnectTests/Pods-KHPhoneConnectTests.release.xcconfig"; sourceTree = "<group>"; };
 		C417FCA21E56F731002CE278 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
 		C417FCA31E56F731002CE278 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
+		C446DC9F21D2D4CD0060F23E /* PickerViewFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewFeeder.swift; sourceTree = "<group>"; };
 		C461014C1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPhoneRoundedUIView.h; sourceTree = "<group>"; };
 		C461014D1DD8DC1C00D774E0 /* KHPhoneRoundedUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPhoneRoundedUIView.m; sourceTree = "<group>"; };
 		C46A44211E198B9D00169565 /* KHPhone Connect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KHPhone Connect-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 		C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPhoneQRScannerViewController.m; sourceTree = "<group>"; };
 		C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHPSettingsViewController.swift; sourceTree = "<group>"; };
 		C4DD16D71E54EE2C0004ED78 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		C4EF132B21D273A500DBC8E2 /* endpoints.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = endpoints.json; sourceTree = "<group>"; };
+		C4EF132D21D2A40100DBC8E2 /* ToolbarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarPickerView.swift; sourceTree = "<group>"; };
 		E17C5E1E456DA3D6A0D96450 /* Pods-KHPhoneConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnect/Pods-KHPhoneConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +173,8 @@
 				BA44221D196E44E2007A2AFA /* XCLoginViewController.h */,
 				BA44221E196E44E2007A2AFA /* XCLoginViewController.m */,
 				C4CEE3E21E216C45009D2439 /* KHPSettingsViewController.swift */,
+				C446DC9F21D2D4CD0060F23E /* PickerViewFeeder.swift */,
+				C4EF132D21D2A40100DBC8E2 /* ToolbarPickerView.swift */,
 				C4C41FF11DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.h */,
 				C4C41FF21DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m */,
 				BA44221A196E44E2007A2AFA /* Main.storyboard */,
@@ -185,6 +192,7 @@
 		BA44220F196E44E2007A2AFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4EF132B21D273A500DBC8E2 /* endpoints.json */,
 				C417FCA21E56F731002CE278 /* LocalConnection.h */,
 				C417FCA31E56F731002CE278 /* LocalConnection.m */,
 				C4DD16D71E54EE2C0004ED78 /* Reachability.swift */,
@@ -272,12 +280,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KHP;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = KHPhone;
 				TargetAttributes = {
 					BA442204196E44E2007A2AFA = {
 						DevelopmentTeamName = "Armand van der Zwan (Personal Team)";
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -287,7 +295,7 @@
 					};
 					BA442225196E44E2007A2AFA = {
 						DevelopmentTeam = FR97A6NL2M;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1010;
 						TestTargetID = BA442204196E44E2007A2AFA;
 					};
 				};
@@ -320,6 +328,7 @@
 				BA442213196E44E2007A2AFA /* InfoPlist.strings in Resources */,
 				C4AAEF721DC3A6C000ACF13B /* Launch Screen.storyboard in Resources */,
 				BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */,
+				C4EF132C21D273A500DBC8E2 /* endpoints.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,11 +391,13 @@
 				BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */,
 				BA442215196E44E2007A2AFA /* main.m in Sources */,
 				BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */,
+				C4EF132E21D2A40100DBC8E2 /* ToolbarPickerView.swift in Sources */,
 				C4C41FF31DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */,
 				BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */,
 				C4DD16D81E54EE2C0004ED78 /* Reachability.swift in Sources */,
 				C417FCA41E56F731002CE278 /* LocalConnection.m in Sources */,
 				C4CEE3E31E216C45009D2439 /* KHPSettingsViewController.swift in Sources */,
+				C446DCA021D2D4CD0060F23E /* PickerViewFeeder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +411,6 @@
 				C417FCA51E56F731002CE278 /* LocalConnection.m in Sources */,
 				C46A44281E198BCC00169565 /* KHPhonePrefUtil.swift in Sources */,
 				C4C41FF41DD5FBD200E3A2E2 /* KHPhoneQRScannerViewController.m in Sources */,
-				C4CEE3E41E216C45009D2439 /* KHPSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,12 +464,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -501,12 +513,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -539,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FR97A6NL2M;
@@ -569,7 +584,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -610,7 +625,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "KHPhone_17-08-2018";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -642,8 +657,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone ConnectTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHPhoneConnect.app/KHPhoneConnect";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -670,8 +684,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xianwenchen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone ConnectTests-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHPhoneConnect.app/KHPhoneConnect";
 				WRAPPER_EXTENSION = xctest;
 			};
