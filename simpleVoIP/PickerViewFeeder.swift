@@ -57,7 +57,9 @@ class PickerViewFeeder: NSObject {
         let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
         let decoder = JSONDecoder()
         let jsonData = try decoder.decode(Endpoints.self, from: data)
-        return jsonData.endpoints
+        return jsonData.endpoints.sorted(by: { (endpoint1, endpoint2) -> Bool in
+          return endpoint1.name < endpoint2.name
+        })
       } catch {
         // could not load data!
       }
@@ -70,6 +72,18 @@ class PickerViewFeeder: NSObject {
     if let endpoint = endpoint(at: row) {
       KHPhonePrefUtil.update(with: endpoint)
     }
+  }
+  
+  func rowForSip(sip: String) -> Int {
+    // this can be way better
+    if let endpoints = endpoints {
+      for (index, endpoint) in endpoints.enumerated() {
+        if endpoint.sip == sip {
+          return index + 1
+        }
+      }
+    }
+    return 0
   }
 }
 

@@ -24,15 +24,15 @@ import UIKit
   fileprivate let pickerView = ToolbarPickerView()
   var endpoints: [Endpoint]?
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
+  fileprivate func setupUI() {
     sipAdressTextField.text = ""
     chooseEndpointTextField.inputView = pickerView
     chooseEndpointTextField.inputAccessoryView = pickerView.toolbar
     pickerView.delegate = pickerFeeder
     pickerView.toolbarDelegate = self
-    pickerView.selectRow(1, inComponent: 0, animated: false)
+    if let sip = KHPhonePrefUtil.returnSipURL() {
+      pickerView.selectRow(pickerFeeder.rowForSip(sip: sip), inComponent: 0, animated: false)
+    }
     sipAdressTextField.delegate = self
     portNumberTextField.delegate = self
     userPhoneNumberTextField.delegate = self
@@ -49,6 +49,12 @@ import UIKit
     toolBar.sizeToFit()
     
     userPhoneNumberTextField.inputAccessoryView = toolBar
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    setupUI()
     
     if focusOnUserPhoneNeeded { // this is used when the user has tapped on a setup link
       focusOnUserPhoneNumber()
@@ -89,6 +95,8 @@ import UIKit
   func updateTextFields(){
     if let congregationName = KHPhonePrefUtil.returnCongregationName() {
       chooseEndpointTextField.text = congregationName
+    } else {
+      chooseEndpointTextField.text = "-- kies een gemeente --"
     }
     
     let sipPort = KHPhonePrefUtil.returnSipPort()
