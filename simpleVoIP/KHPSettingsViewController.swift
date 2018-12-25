@@ -32,7 +32,7 @@ import UIKit
     chooseEndpointTextField.inputAccessoryView = pickerView.toolbar
     pickerView.delegate = pickerFeeder
     pickerView.toolbarDelegate = self
-    
+    pickerView.selectRow(1, inComponent: 0, animated: false)
     sipAdressTextField.delegate = self
     portNumberTextField.delegate = self
     userPhoneNumberTextField.delegate = self
