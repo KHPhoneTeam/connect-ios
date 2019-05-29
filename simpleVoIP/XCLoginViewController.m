@@ -80,8 +80,10 @@
     NSString *state = notification.userInfo[@"state"];
     
     if ([state isEqualToString:@"disconnected"]) {
-        [self updateCallState:NO];
-        [self updateAnswerState:NO];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self updateCallState:NO];
+            [self updateAnswerState:NO];
+        });
         // maybe post an alert?
     }
 }

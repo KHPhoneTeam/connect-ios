@@ -73,74 +73,74 @@ NSString * const KHPhoneCallNotification = @"KHPhoneCallNotification";
 
 int initPjsip()
 {
-    
-    pj_status_t status;
-    _acc_id = -1;
-    
-    // Create pjsua first
-    status = pjsua_create();
-    
-    if (status != PJ_SUCCESS) error_exit("Error in pjsua_create()", status);
-    
-    // Init pjsua
-    
-        // Init the config structure
-        pjsua_config cfg;
-        pjsua_config_default (&cfg);
-    
-        cfg.cb.on_incoming_call = &on_incoming_call;
-        cfg.cb.on_call_media_state = &on_call_media_state;
-        cfg.cb.on_call_state = &on_call_state;
-        
-        // Init the logging config structure
-        pjsua_logging_config log_cfg;
-        pjsua_logging_config_default(&log_cfg);
-        log_cfg.console_level = 4;
-        
-        // Init the pjsua
-        status = pjsua_init(&cfg, &log_cfg, NULL);
-        if (status != PJ_SUCCESS) error_exit("Error in pjsua_init()", status);
-        
-        // opus
-        pj_str_t codec_id = pj_str( "opus/48000" );
-        
-        if ( pjsua_codec_set_priority( &codec_id, PJMEDIA_CODEC_PRIO_HIGHEST ) != PJ_SUCCESS )
-        {
-            fprintf(stderr, "Warning: Failed to set opus/48000 codec at highest priority\n" );
-        }
-    
-    
-    // Add UDP transport.
-    
-        // Init transport config structure
-        pjsua_transport_config udpcfg;
-        pjsua_transport_config_default(&udpcfg);
-        udpcfg.port = 5011;
-    
-        // Add TCP transport.
-        status = pjsua_transport_create(PJSIP_TRANSPORT_UDP, &udpcfg, &local_transport_id);
-        if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
-    
-    
+  
+  pj_status_t status;
+  _acc_id = -1;
+  
+  // Create pjsua first
+  status = pjsua_create();
+  
+  if (status != PJ_SUCCESS) error_exit("Error in pjsua_create()", status);
+  
+  // Init pjsua
+  
+  // Init the config structure
+  pjsua_config cfg;
+  pjsua_config_default (&cfg);
+  
+  cfg.cb.on_incoming_call = &on_incoming_call;
+  cfg.cb.on_call_media_state = &on_call_media_state;
+  cfg.cb.on_call_state = &on_call_state;
+    cfg.stun_try_ipv6 = PJ_TRUE;
+  // Init the logging config structure
+  pjsua_logging_config log_cfg;
+  pjsua_logging_config_default(&log_cfg);
+  log_cfg.console_level = 4;
+  
+  // Init the pjsua
+  status = pjsua_init(&cfg, &log_cfg, NULL);
+  if (status != PJ_SUCCESS) error_exit("Error in pjsua_init()", status);
+  
+  // opus
+  pj_str_t codec_id = pj_str( "opus/48000" );
+  
+  if ( pjsua_codec_set_priority( &codec_id, PJMEDIA_CODEC_PRIO_HIGHEST ) != PJ_SUCCESS )
+  {
+    fprintf(stderr, "Warning: Failed to set opus/48000 codec at highest priority\n" );
+  }
+  
+  
+  // Add UDP transport.
+  // Init transport config structure
+  pjsua_transport_config udpcfg;
+  pjsua_transport_config_default(&udpcfg);
+    udpcfg.port = 0;
+  //status = pjsua_transport_create(PJSIP_TRANSPORT_UDP, &udpcfg, &local_transport_id);
+  //if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
+  status = pjsua_transport_create(PJSIP_TRANSPORT_UDP6, &udpcfg, &local_transport_id);
+  if (status != PJ_SUCCESS) error_exit("Error creating IPv6 transport", status);
+  
+  /*
+  // Add TCP transport.
+  
+    // Init transport config structure
+    pjsua_transport_config tcpcfg;
+    pjsua_transport_config_default(&tcpcfg);
+    tcpcfg.port = 5060;
+  
+  
     // Add TCP transport.
-    {
-        // Init transport config structure
-        pjsua_transport_config tcpcfg;
-        pjsua_transport_config_default(&tcpcfg);
-        tcpcfg.port = 5011;
-        
-        
-        // Add TCP transport.
-        status = pjsua_transport_create(PJSIP_TRANSPORT_TCP, &tcpcfg, NULL);
-        if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
-    }
-    
+    status = pjsua_transport_create(PJSIP_TRANSPORT_TCP, &tcpcfg, NULL);
+    if (status != PJ_SUCCESS) error_exit("Error creating transport", status);
+  
+    */
+  
     // Initialization is done, now start pjsua
     status = pjsua_start();
     if (status != PJ_SUCCESS) error_exit("Error starting pjsua", status);
     
     //status = pjsua_acc_add_local(local_transport_id, true, &_acc_id);
-    if (status != PJ_SUCCESS) error_exit("Error adding local account", status);
+    //if (status != PJ_SUCCESS) error_exit("Error adding local account", status);
     //int result = registerAccount("0653703730", "khphone");
     pjsua_codec_info c[32];
     
@@ -169,7 +169,8 @@ int registerAccount(char *sipUser, char* sipDomain){
     pj_status_t status;
     pjsua_acc_config cfg;
     pjsua_acc_config_default(&cfg);
-    cfg.ipv6_media_use = PJSUA_IPV6_DISABLED;
+    cfg.ipv6_media_use = PJSUA_IPV6_ENABLED;
+    cfg.nat64_opt = PJSUA_NAT64_ENABLED;
     
     char sipId[MAX_SIP_ID_LENGTH];
     sprintf(sipId, "sip:%s@%s", sipUser, sipDomain);
@@ -209,7 +210,9 @@ int registerAccount(char *sipUser, char* sipDomain){
 {
     char *sipUser = (char*) [[KHPhonePrefUtil returnUserPhoneNumber] UTF8String];
     //char *sipDomain = (char*)[[KHPhonePrefUtil returnCongregationName] UTF8String];
-    int registerStatus = registerAccount(sipUser, "khphone.nl");
+    //int registerStatus = registerAccount(sipUser, "khphone.nl");
+    //int registerStatus = registerAccount(sipUser, "[2001:2::aab1:a0ff:3c72:1249:f598]");
+      int registerStatus = registerAccount(sipUser, "[2001:470:1f14:ff3::2]");
     
     char *cDestUri = (char*)[destUri UTF8String];
     pj_status_t status;
@@ -331,8 +334,9 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
                                          ];
          
          [center postNotification:notification];
-         
-         [UIDevice currentDevice].proximityMonitoringEnabled = NO;
+         dispatch_async(dispatch_get_main_queue(), ^{
+             [UIDevice currentDevice].proximityMonitoringEnabled = NO;
+         });
      }
 }
 

@@ -3,8 +3,9 @@
     {
       "id": 0, 
       "name": "Amsterdam Tuindorp-Oostzaan", 
-      "port": 5060, 
-      "sip": "sip:31207165913@sip1.budgetphone.nl"
+      "port": 5060,
+      "sipipv4": "sip:31207165913@sip1.budgetphone.nl",
+      "sip": "sip:31207165913@[2a06:dc00::10]"
     }, 
     {
       "id": 1, 
