@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80AAF5F8F1DA4709B6DCC370 /* Pods_KHPhoneConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D62E9A31E98AEA750204AC /* Pods_KHPhoneConnectTests.framework */; };
 		BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
 		BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220A196E44E2007A2AFA /* CoreGraphics.framework */; };
 		BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
@@ -53,10 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		453FEF9679F7F9AC96A091CE /* Pods-KHPhoneConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnectTests/Pods-KHPhoneConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		644B67D5C3D95268A0A9A3F0 /* Pods_KHPhoneConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHPhoneConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F64D5CB3D363C9ED21C6C01 /* Pods-KHPhoneConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnect/Pods-KHPhoneConnect.debug.xcconfig"; sourceTree = "<group>"; };
-		A0D62E9A31E98AEA750204AC /* Pods_KHPhoneConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHPhoneConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2198BD26C56291BE94E3FB7E /* Pods-KHPhoneConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnect.debug.xcconfig"; path = "Target Support Files/Pods-KHPhoneConnect/Pods-KHPhoneConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		5374EBEE91D8E0F2158385A7 /* Pods_KHPhoneConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHPhoneConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAD0D307BB8867EE1689FFB /* Pods-KHPhoneConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnect.release.xcconfig"; path = "Target Support Files/Pods-KHPhoneConnect/Pods-KHPhoneConnect.release.xcconfig"; sourceTree = "<group>"; };
 		BA442205196E44E2007A2AFA /* KHPhoneConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHPhoneConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA442208196E44E2007A2AFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA44220A196E44E2007A2AFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,7 +78,6 @@
 		BA4A6060196E546000C23EE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BACD0DED19726B4A005A6607 /* XCPjsua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPjsua.m; sourceTree = "<group>"; };
 		BACD0DEF19726B59005A6607 /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
-		C16B80CB30EB82B512B1C4EC /* Pods-KHPhoneConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnectTests/Pods-KHPhoneConnectTests.release.xcconfig"; sourceTree = "<group>"; };
 		C417FCA21E56F731002CE278 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
 		C417FCA31E56F731002CE278 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
 		C446DC9F21D2D4CD0060F23E /* PickerViewFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewFeeder.swift; sourceTree = "<group>"; };
@@ -96,7 +93,6 @@
 		C4DD16D71E54EE2C0004ED78 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C4EF132B21D273A500DBC8E2 /* endpoints.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = endpoints.json; sourceTree = "<group>"; };
 		C4EF132D21D2A40100DBC8E2 /* ToolbarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarPickerView.swift; sourceTree = "<group>"; };
-		E17C5E1E456DA3D6A0D96450 /* Pods-KHPhoneConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHPhoneConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHPhoneConnect/Pods-KHPhoneConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +115,6 @@
 			files = (
 				BA44222A196E44E2007A2AFA /* UIKit.framework in Frameworks */,
 				BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */,
-				80AAF5F8F1DA4709B6DCC370 /* Pods_KHPhoneConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +130,7 @@
 				BA442206196E44E2007A2AFA /* Products */,
 				C46A44211E198B9D00169565 /* KHPhone Connect-Bridging-Header.h */,
 				C46A44221E198B9D00169565 /* KHPhone ConnectTests-Bridging-Header.h */,
-				EE706749F46ADF4117BB1F4D /* Pods */,
+				C7ABF1EA903BE863D0C02364 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,8 +152,7 @@
 				BA442208196E44E2007A2AFA /* Foundation.framework */,
 				BA44220A196E44E2007A2AFA /* CoreGraphics.framework */,
 				BA44220C196E44E2007A2AFA /* UIKit.framework */,
-				644B67D5C3D95268A0A9A3F0 /* Pods_KHPhoneConnect.framework */,
-				A0D62E9A31E98AEA750204AC /* Pods_KHPhoneConnectTests.framework */,
+				5374EBEE91D8E0F2158385A7 /* Pods_KHPhoneConnect.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,15 +216,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EE706749F46ADF4117BB1F4D /* Pods */ = {
+		C7ABF1EA903BE863D0C02364 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8F64D5CB3D363C9ED21C6C01 /* Pods-KHPhoneConnect.debug.xcconfig */,
-				E17C5E1E456DA3D6A0D96450 /* Pods-KHPhoneConnect.release.xcconfig */,
-				453FEF9679F7F9AC96A091CE /* Pods-KHPhoneConnectTests.debug.xcconfig */,
-				C16B80CB30EB82B512B1C4EC /* Pods-KHPhoneConnectTests.release.xcconfig */,
+				2198BD26C56291BE94E3FB7E /* Pods-KHPhoneConnect.debug.xcconfig */,
+				9BAD0D307BB8867EE1689FFB /* Pods-KHPhoneConnect.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA442237196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "KHPhoneConnect" */;
 			buildPhases = (
-				76CCC2DBB314AB4A4506210A /* [CP] Check Pods Manifest.lock */,
+				BC575A48CC932CF38BC4BBF5 /* [CP] Check Pods Manifest.lock */,
 				BA442201196E44E2007A2AFA /* Sources */,
 				BA442202196E44E2007A2AFA /* Frameworks */,
 				BA442203196E44E2007A2AFA /* Resources */,
@@ -258,7 +250,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA44223A196E44E3007A2AFA /* Build configuration list for PBXNativeTarget "KHPhoneConnectTests" */;
 			buildPhases = (
-				498577784CB471BB73DF45A0 /* [CP] Check Pods Manifest.lock */,
 				BA442222196E44E2007A2AFA /* Sources */,
 				BA442223196E44E2007A2AFA /* Frameworks */,
 				BA442224196E44E2007A2AFA /* Resources */,
@@ -305,6 +296,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -343,34 +335,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		498577784CB471BB73DF45A0 /* [CP] Check Pods Manifest.lock */ = {
+		BC575A48CC932CF38BC4BBF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KHPhoneConnectTests-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76CCC2DBB314AB4A4506210A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-KHPhoneConnect-checkManifestLockResult.txt",
 			);
@@ -481,6 +459,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -549,13 +528,14 @@
 		};
 		BA442238196E44E3007A2AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F64D5CB3D363C9ED21C6C01 /* Pods-KHPhoneConnect.debug.xcconfig */;
+			baseConfigurationReference = 2198BD26C56291BE94E3FB7E /* Pods-KHPhoneConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = FR97A6NL2M;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -564,10 +544,7 @@
 					"$(inherited)",
 					PJ_AUTOCONF,
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "simpleVoIP/KHPhoneConnect-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_MAP_FILE_PATH = "";
@@ -592,10 +569,11 @@
 		};
 		BA442239196E44E3007A2AFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17C5E1E456DA3D6A0D96450 /* Pods-KHPhoneConnect.release.xcconfig */;
+			baseConfigurationReference = 9BAD0D307BB8867EE1689FFB /* Pods-KHPhoneConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FR97A6NL2M;
@@ -606,10 +584,7 @@
 					"$(inherited)",
 					PJ_AUTOCONF,
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "simpleVoIP/KHPhoneConnect-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_MAP_FILE_PATH = "";
@@ -622,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gappless.khphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9bc58e6f-1dc7-4619-8f09-ef8d3cac49b5";
-				PROVISIONING_PROFILE_SPECIFIER = "KHPhone_17-08-2018";
+				PROVISIONING_PROFILE_SPECIFIER = "KHPhone_18-08-2019";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -633,7 +608,6 @@
 		};
 		BA44223B196E44E3007A2AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 453FEF9679F7F9AC96A091CE /* Pods-KHPhoneConnectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -650,7 +624,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(CONFIGURATION_TEMP_DIR)/$(PROJECT_NAME).build/DerivedSources";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "simpleVoIPTests/KHPhoneConnectTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xianwenchen.${PRODUCT_NAME:rfc1034identifier}";
@@ -665,7 +639,6 @@
 		};
 		BA44223C196E44E3007A2AFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C16B80CB30EB82B512B1C4EC /* Pods-KHPhoneConnectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -678,7 +651,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "simpleVoIP/KHPhoneConnect-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(CONFIGURATION_TEMP_DIR)/$(PROJECT_NAME).build/DerivedSources";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "simpleVoIPTests/KHPhoneConnectTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xianwenchen.${PRODUCT_NAME:rfc1034identifier}";
