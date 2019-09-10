@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -181,7 +181,7 @@
                                     <segue destination="PJ0-R3-2Va" kind="presentation" identifier="QRSegue" modalPresentationStyle="fullScreen" id="IFW-Om-Yye"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.91" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcO-IS-YSw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.92" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcO-IS-YSw">
                                 <rect key="frame" x="645" y="1003" width="103" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="fEx-7f-r0A"/>
@@ -419,14 +419,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="call-icon" width="48" height="48"/>
+        <image name="call-icon" width="24" height="24"/>
         <image name="cross" width="256" height="256"/>
         <image name="handup" width="256" height="256"/>
-        <image name="logo_white_full1" width="1108.800048828125" height="230.39999389648438"/>
+        <image name="logo_white_full1" width="154" height="32"/>
         <image name="play" width="256" height="256"/>
         <image name="qr" width="256" height="256"/>
-        <image name="settings-icon" width="50" height="50"/>
+        <image name="settings-icon" width="25" height="25"/>
         <image name="speaker-on-icon" width="256" height="256"/>
-        <image name="zaalBlur" width="900" height="450"/>
+        <image name="zaalBlur" width="450" height="225"/>
     </resources>
 </document>
