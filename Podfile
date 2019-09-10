@@ -4,5 +4,4 @@ use_frameworks!
 
 target 'KHPhoneConnect' do
   pod 'pjsip'
-
 end

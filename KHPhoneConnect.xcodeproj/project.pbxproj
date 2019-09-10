@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3984D98C4EF6ADB0E5027F3 /* Pods_KHPhoneConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5374EBEE91D8E0F2158385A7 /* Pods_KHPhoneConnect.framework */; };
 		BA442209196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
 		BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220A196E44E2007A2AFA /* CoreGraphics.framework */; };
 		BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA44220C196E44E2007A2AFA /* UIKit.framework */; };
@@ -106,6 +107,7 @@
 				BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */,
 				BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */,
 				BA44220D196E44E2007A2AFA /* UIKit.framework in Frameworks */,
+				B3984D98C4EF6ADB0E5027F3 /* Pods_KHPhoneConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,14 +548,14 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "simpleVoIP/KHPhoneConnect-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gappless.khphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3e56eda8-dd2b-44ee-9898-c0e87b17017b";
@@ -563,6 +565,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -586,7 +589,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "simpleVoIP/KHPhoneConnect-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -602,6 +605,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "KHPhone Connect-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
